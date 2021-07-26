@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="es" class="html1">
+<html dir="ltr" lang="es" style="overflow-y: auto !important;">
 <head>
 
 <!-- Meta Tags -->
@@ -83,57 +83,6 @@
     
 <script type="text/javascript">
  
-    /*var revapi = jQuery(document).ready(function() {
-    });*/
-   /* var revapi5 = jQuery("#rev_slider_3_1").show().revolution({
-    });*/
-        
-   /* revapi.bind('revolution.slide.layeraction', function (e, data) {
-     var totalSlides = revapi.revmaxslide();
-     console.log(totalSlides);
-      var currentLayer = jQuery(data.layer);
-      var layerEvent = data.eventtype;
-      var layerClass = currentLayer.attr('class');
-      var layerID = currentLayer.attr('id');
-
-        if(layerClass.search('ultimo') !== -1 && layerEvent === 'leavestage') {
-
-            $(".html1").css("overflow-y", "scroll");
-            $("#search").css("background-color", "#fafafa");
-
-                $("html, body").animate({
-                    scrollTop: $("#home1").offset().top-100
-                }, 2000);
-            
-        }
-    });*/
-
-
-    // listen for when the slider initially loads
-    /*revapi5.bind('revolution.slide.onloaded', function() {
-     
-        console.log('Slider Loaded');
-     
-        // get number of total slides in slider
-        var totalSlides = revapi5.revmaxslide();
-     
-        // listen for when a new slide is shown
-        revapi5.bind('revolution.slide.onchange', function(e, data) {
-     
-            // get current slide number
-            var currentSlide = data.slideIndex;
-     
-            // pause slider at the second to last slide
-            if(currentSlide === totalSlides - 1) {
-     
-                console.log('Slider Paused');
-                revapi5.revpause();
-     
-            }
-     
-        });
-     
-    });*/
         
     var $win = $(window);
     var $pos = 0;
@@ -152,82 +101,12 @@
     <div id="spinner">
       <img src="images/preloaders/9.gif" alt="preload">
     </div>
-    <div id="disable-preloader" class="btn btn-default btn-sm">Desactivar Preloader</div>
+    <!--<div id="disable-preloader" class="btn btn-default btn-sm">Desactivar Preloader</div>-->
   </div>
   
-  <!-- Header -->
-  <header id="header" class="header">
-    <div class="header-nav navbar-fixed-top header-white navbar-white navbar-transparent navbar-sticky-animated animated-active">
-        <div class="header-top bg-white sm-text-center p-0">
-      <div class="container">
-        <div class="row m-0">
-            <div class="col-md-4 pr-0">
-          </div>
-          <div class="col-md-8 col-sm-12">
-            <div class="widget no-border m-0">
-              <ul class="topbar list-inline xs-text-center text-white mt-5">
-                <li class="m-0 pl-10 pr-10"> <a href="https://www.occ.com.mx/empleos/de-sello-rojo/" class="text-negro2">Bolsa de trabajo</a> </li>
-                <li class="m-0 pl-10 pr-10"> 
-                  <a href="faq.php" class="text-negro2"> Preguntas frecuentes</a> 
-                </li>
-                <li class="m-0 pl-10 pr-10 misello2"> 
-                  <a href="tel:+52018008873556" class="text-negro2"> ¡Llámanos! 01800<span class="misello">MISELLO</span></a> 
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <div class="header-nav-wrapper">
-        <div class="container">
-          <nav id="menuzord-right" class="menuzord">
-            <a class="menuzord-brand pull-left flip mt-0" href="javascript:void(0)">
-              <img src="images/logo-sello.png" alt="logo">
-            </a>
-            <ul class="menuzord-menu dark">
-              <li class="menuInicio"><a href="index.php">INICIO</a>
-              </li>
-              <li><a href="catalogo.php">PRODUCTOS</a>
-              </li>
-              <li><a href="distribucion.php">DISTRIBUCIÓN</a>
-              </li>           
-              <li><a href="contacto.php">CONTACTO</a>
-              </li>
-                <li class="buscar">
-                    <div class="box">
-                      <div class="container-1">
-                          <form action="catalogo.php" method="GET" style="margin:0px !important;">
-                          <span class="icon"><i class="fa fa-search"></i></span>
-                          <input name="q" type="search" id="search" placeholder="Buscar..." />
-                        </form>
-                      </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="col-md-12">
-                        <div class="widget no-border m-0">
-                          <ul class="styled-icons lista-iconos icon-circled icon-rosa icon-flat icon-sm pull-right flip sm-pull-none sm-text-right xs-text-right">
-                            <li><a href="https://www.facebook.com/alimentossellorojomx/?ref=br_rs" target="_blank"><i class="fab fa-facebook-f text-crema"></i></a></li>
-                            <li><a href="https://www.instagram.com/sellorojo/" target="_blank"><i class="fab fa-instagram text-crema"></i></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCAf8lF4UilevTxCAxClbgCw" target="_blank"><i class="fab fa-youtube text-crema"></i></a></li>
-                          </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="menuR"><a class="btn btn-whatsapp" href="https://api.whatsapp.com/send?phone=+523316055265&text=Hola%2C%20Sello%20Rojo"><i class="fab fa-whatsapp mr-15"></i>Contacto</a>
-              </li>
-                <li class="menuR"><a href="https://www.occ.com.mx/empleos/de-sello-rojo/" class="text-negro2">Bolsa de trabajo</a>
-              </li>
-                <li class="menuR"><a href="faq.php" class="text-negro2"> Preguntas frecuentes</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
+    <?php
+    include "menu.html";
+    ?>
   
   <!-- Start main-content -->
   <div class="main-content">
@@ -1157,16 +1036,16 @@
 </div><!-- END REVOLUTION SLIDER -->
 		<script type="text/javascript">
 			            var revapi3,
-			tpj;
+			tpj1;
 (function() {
     if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();
 
     function onLoad() {
-        if (tpj===undefined) { tpj = jQuery; if("off" == "on") tpj.noConflict();}
-				if(tpj("#rev_slider_3_1").revolution == undefined){
+        if (tpj1===undefined) { tpj1 = jQuery; if("off" == "on") tpj1.noConflict();}
+				if(tpj1("#rev_slider_3_1").revolution == undefined){
 					revslider_showDoubleJqueryError("#rev_slider_3_1");
 				}else{
-					revapi3 = tpj("#rev_slider_3_1").show().revolution({
+					revapi3 = tpj1("#rev_slider_3_1").show().revolution({
 						sliderType:"standard",
                         jsFileLocation:"js/revolution-slider/js/",
 						sliderLayout:"fullscreen",
@@ -1256,6 +1135,24 @@
               // data.slideIndex   = Current Slide Index (starting with the number zero)
               // data.currentslide = Current Slide as jQuery Object
               // data.prevslide    = Previous Slide as jQuery Object 
+           
+          });
+
+          revapi3.on('revolution.slide.onafterswap', function (event, data) {
+             console.log(data.slideIndex+" algo");
+             if(data.slideIndex == 4){
+               setTimeout(function(){
+                 $('html,body').animate({
+                         scrollTop: $("#rev_slider_4_1").offset().top
+                     }, 'slow');
+               },3000)
+               setTimeout(function(){
+                 $("#home").hide().remove();
+                 $("html,body").css("overflow","auto !important");
+               },4000)
+             }
+              // data.currentslide  = Current Slide as jQuery Object
+              // data.previousslide = Previous Slide as jQuery Object
            
           });
                     
@@ -1569,7 +1466,7 @@ jsFileLocation:"//localhost:8888/revslider/revslider/public/assets/js/",
       
             <!-- Section: -->
     <section id="cuerpo2" class="cuerpo2">
-      <div class="container">
+      <div class="container ">
         <div class="section-content mt-50 contenedorRecetasC">
             <div class="section-title text-center">
               <div class="row m-0">
@@ -1881,7 +1778,7 @@ tu cuerpo.</p>
       
     <section>
       <div class="container contenedorSocios">
-        <h2 class="text-cremaF2 text-center mt-0 notoserif line-height-1">Compra Sello Rojo</h2>
+        <h2 class="text-cremaF2 text-center mt-0 notoserif line-height-1 mb-30">Compra Sello Rojo</h2>
         <div class="row m-0">
           <div class="col-md-12">
             <div id="carouselSocios" class="socios owl-carousel owl-theme" data-dots="false" data-nav="true">
@@ -1893,7 +1790,7 @@ tu cuerpo.</p>
             </div>
           </div>
         </div>
-        <div class="section-title text-center mt-20">
+        <div class="section-title text-center mt-50">
             <div class="row m-0">
                 <div class="col-md-8 col-md-offset-2">
                   <h4 class="text-cremaF2 filson-bold line-height-1">¿Te gustaría distribuir Sello Rojo?</h4>
@@ -1905,89 +1802,9 @@ tu cuerpo.</p>
       </div>
     </section>
       
-    <!-- Footer -->
-  <footer id="footer" class="footer pb-0" data-bg-img="" data-bg-color="#fafafa">
-    <div class="container-fluid pt-30 pb-15">
-      <div class="row m-0">
-        <div class="col-sm-1 col-md-1 col-xs-12 p-0 contenedorL">
-          <div class="widget pb-0 hidden-xs"> 
-              <img class="pull-right" alt="Logo Sello Rojo" src="images/logo-sello.png">
-          </div>
-            <div class="col-xs-4 mb-10 hidden visible-xs">
-                <img class="selloResponsive" alt="Logo Sello Rojo" src="images/logo-sello.png">
-            </div>
-            <div class="col-xs-8 redesResponsive hidden visible-xs p-0">
-                <ul class="styled-icons icon-dark icon-cremaF icon-circled icon-sm mt-10 icon-rosa">
-                  <li><a href="https://www.facebook.com/alimentossellorojomx/?ref=br_rs" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/sellorojo/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCAf8lF4UilevTxCAxClbgCw" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                  <li><a href="https://twitter.com/SelloRojo"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-sm-3 col-md-3 col-xs-12 corporativo">
-          <div class="widget domicilio">
-            <h5 class="widget-title text-cremaF filson-medium">Corporativo</h5>
-            <div class="col-md-12 col-sm-12 p-0">
-                <p class="mb-0 filson text-negro2">Dr. R. Michel 2285</p>
-                <p class="mb-0 filson text-negro2">Col. Jardines del Rosario</p>
-                <p class="mb-0 filson text-negro2">Guadalajara, Jalisco, México.</p>
-                <p class="mb-0 filson text-negro2">C.P. 44890 </p>
-            </div>
-            <div class="col-md-12 col-sm-12 p-0">
-                <div class="col-md-12 p-0">
-                    <img class="imgText" src="images/iconos/cel.png" alt="Celular"><a href="tel:+523316055265"><p class="imgText filson text-negro2">33 1605 5265</p></a>
-                </div>
-                <div class="col-md-12 col-sm-12 p-0">
-                    <img class="imgText" src="images/iconos/mail.png" alt="Mail"><a href="mailto:hola@sellorojo.com.mx"><p class="imgText filson text-negro2">hola@sellorojo.com.mx</p></a>
-                </div>
-            </div>
-            <div class="col-md-12 col-sm-12 p-0 hidden-xs">
-                <ul class="styled-icons icon-dark icon-cremaF icon-circled icon-sm mt-10 icon-rosa">
-                  <li><a href="https://www.facebook.com/alimentossellorojomx/?ref=br_rs" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/sellorojo/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCAf8lF4UilevTxCAxClbgCw" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                  <li><a href="https://twitter.com/SelloRojo"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-md-3 col-xs-12 mapa">
-          <div class="widget">
-            <h5 class="widget-title text-cremaF filson-medium">Mapa del sitio</h5>
-            <div class="col-md-6 col-sm-6 col-xs-6 p-0">
-                <a href="index.php"><p class="mb-0 filson text-negro2">Inicio</p></a>
-                <a href="catalogo.php"><p class="mb-0 filson text-negro2">Productos</p></a>
-                <a href="distribucion.php"><p class="mb-0 filson text-negro2">Distribución</p></a>
-                <a href="contacto.php"><p class="mb-0 filson text-negro2">Contacto</p></a>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6 p-0">
-                <a href="faq.php"><p class="mb-0 filson text-negro2">Preguntas frecuentes</p></a>
-                <a href="https://www.occ.com.mx/empleos/de-sello-rojo/"><p class="mb-0 filson text-negro2">Bolsa de trabajo</p></a>
-                <a href="aviso.php"><p class="mb-0 filson text-negro2">Aviso de privacidad</p></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-md-4 col-xs-12">
-          <div class="widget">
-            <h5 class="widget-title text-cremaF filson-medium llamanos">¡Llámanos!</h5>
-            <div class="col-md-12 col-sm-12 col-xs-12 p-0">
-                <a href="tel:+52018008873556"><div class="contenedorExtencion"><p class="mb-0 filson-medium text-negro2 font-40 relative">01800<span class="text-cremaF">MISELLO</span></p><p class="extencion filson-medium text-gris">(6473556)</p></div></a>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12 pt-15 p-0 contenedorIso">
-                <div class="col-md-3 col-sm-3 col-xs-3 p-0"><img src="images/footer/iso1.png" alt="ISO GlobalSTD"></div>
-                <div class="col-md-3 col-sm-3 col-xs-3 p-0"><img src="images/footer/iso2.png" alt="ISO ANAB"></div>
-                <div class="col-md-3 col-sm-3 col-xs-3 p-0"><img class="" src="images/footer/iso3.png" alt="ISO FSSC 2200"></div>
-                <div class="col-md-3 col-sm-3 col-xs-3 p-0"><img class="" src="images/footer/iso4.png" alt="ISO 9001"></div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12 pt-10 p-0 copy">
-                <p class="text-negro2 filson mb-0 font-12">Alimentos Sello Rojo®</p><p class="text-negro2 filson mb-0 font-12"> Todos los derechos reservados</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      </footer>
+<?php
+    include "footer.html";
+    ?>
       
   <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
   <!-- end main-content -->

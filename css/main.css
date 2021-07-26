@@ -49,8 +49,56 @@
        url('webfont.svg#svgFontName') format('svg');  Legacy iOS*/ 
 }
 
+.btn.btn-whatsapp:hover{
+    color: #fff !important;
+}
+
+.btn.btn-whatsapp{
+    background-color: #ff6665;
+    border: none !important;
+    color: #fff !important;
+    margin-bottom: 5px;
+}
+
 button, a{
     transition: 0.3s !important;
+}
+
+.btn-wts-f{
+    background-color: #ff6665 !important;
+    border: none;
+    text-align: center;
+    border-radius: 25px;
+    height: 40px;
+    width: 40px;
+    display: block;
+    position: relative;
+    padding: 8px 0;
+}
+
+.btn-wts-f:hover{
+    background-color: #fff !important;
+    border: 1px solid #ff6665 !important;
+}
+
+.btn-wts-f:hover i{
+    color: #ff6665 !important;
+}
+
+.contenedorSocios .form-horizontal .control-label {
+    text-align: left !important;
+}
+
+@media (min-width: 768px){
+    .contenedorSocios .form-horizontal .control-label {
+        text-align: left !important;
+    }
+}
+
+.btn-wts-f i{
+    font-size: 20px;
+    color: #fff !important;
+    text-align: center;
 }
 
 .cuerpo .container-fluid{

@@ -135,79 +135,9 @@
     <div id="disable-preloader" class="btn btn-default btn-sm">Desactivar preloader</div>
   </div>
   
-  <!-- Header -->
-  <header id="header" class="header">
-    <div class="header-nav-wrapper navbar-scrolltofixed bg-lightest">
-        <div class="header-top bg-white sm-text-center p-0">
-      <div class="container">
-        <div class="row">
-            <div class="col-md-5 pr-0">
-          </div>
-          <div class="col-md-7">
-            <div class="widget no-border m-0">
-              <ul class="topbar list-inline xs-text-center text-white mt-5">
-                <li class="m-0 pl-10 pr-10"> <a href="https://www.occ.com.mx/empleos/de-sello-rojo/" class="text-negro2">Bolsa de trabajo</a> </li>
-                <li class="m-0 pl-10 pr-10"> 
-                  <a href="#" class="text-negro2"> Preguntas frecuentes</a> 
-                </li>
-                <li class="m-0 pl-10 pr-10 misello2"> 
-                  <a href="tel:+52018008873556" class="text-negro2"> ¡Llámanos! 01800<span class="misello">MISELLO</span></a> 
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <div class="header-nav-wrapper bg-white">
-        <div class="container">
-          <nav id="menuzord-right" class="menuzord">
-            <a class="menuzord-brand pull-left flip mt-0" href="javascript:void(0)">
-              <img src="images/logo-sello.png" alt="Logo Sello Rojo">
-            </a>
-             <ul class="menuzord-menu dark">
-              <li class="menuInicio"><a href="index.html">INICIO</a>
-              </li>
-              <li><a href="catalogo.html">PRODUCTOS</a>
-              </li>
-              <li><a href="distribucion.html">DISTRIBUCIÓN</a>
-              </li>           
-              <li><a href="contacto.html">CONTACTO</a>
-              </li>
-                <li class="buscar">
-                    <div class="box">
-                      <div class="container-1">
-                          <form action="catalogo.html" method="GET" style="margin:0px !important;">
-                          <span class="icon"><i class="fa fa-search"></i></span>
-                          <input name="q" type="search" id="search" placeholder="Buscar..." />
-                        </form>
-                      </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="col-md-12">
-                        <div class="widget no-border m-0">
-                          <ul class="styled-icons lista-iconos icon-circled icon-rosa icon-flat icon-sm pull-right flip sm-pull-none sm-text-right xs-text-right">
-                            <li><a href="https://www.facebook.com/alimentossellorojomx/?ref=br_rs" target="_blank"><i class="fab fa-facebook-f text-crema"></i></a></li>
-                            <li><a href="https://www.instagram.com/sellorojo/" target="_blank"><i class="fab fa-instagram text-crema"></i></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCAf8lF4UilevTxCAxClbgCw" target="_blank"><i class="fab fa-youtube text-crema"></i></a></li>
-                          </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="menuR"><a href="tel:+52018008873556" class="text-negro2"> ¡Llámanos! 01800<span class="misello">MISELLO</span></a>
-              </li>
-                <li class="menuR"><a href="https://www.occ.com.mx/empleos/de-sello-rojo/" class="text-negro2">Bolsa de trabajo</a>
-              </li>
-                <li class="menuR"><a href="faq.html" class="text-negro2"> Preguntas frecuentes</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
+  <?php
+    include "menu.html";
+    ?>
   
   <!-- Start main-content -->
   <div class="main-content">
@@ -423,7 +353,7 @@
                                color: rgba(0, 0, 0, 1.00);">
                       <div class="col-md-12 col-sm-12 col-xs-12 p-0">
                         <div class="col-md-6 col-sm-6 col-xs-9 p-0">
-                            <a class="btn btn-colored btn-lg btn-donde text-uppercase filson-bold" href="distribucion.html">¿Dónde comprar?</a>
+                            <a class="btn btn-colored btn-lg btn-donde text-uppercase filson-bold" href="distribucion.php">¿Dónde comprar?</a>
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-3 pl-20 pr-0">
                             <a class="" href="#"><img class="share" src="images/iconos/compartir.png" alt="Compartir"></a>
@@ -535,7 +465,7 @@
     <!-- Section: Doctors -->
     <section id="" class="contenedorFiltrosPadre contenedorCaracteristicasP">
       <div class="container">
-        <div class="row">
+        <div class="row m-0">
           <div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-ms-offset-1 col-xs-offset-1 p-0">
             <?php
             $specsC = count($specs);
@@ -558,14 +488,14 @@
     <section id="" class="contenedorTablaN" style="display: none;">
           <div class="container bg-gris">
               <div class="section-title text-center">
-                  <div class="row">
+                  <div class="row m-0">
                     <div class="col-md-8 col-md-offset-2">
                       <h2 class="text-cremaF2 mt-0 mb-0 filson-medium font-22 line-height-1">Información nutrimental</h2>
                         <h3 class="text-uppercase text-negro2 font-10 filson mt-5 mb-0">Por porción de 240 ml</h3>
                     </div>
                   </div>
               </div>
-              <div class="row">
+              <div class="row m-0">
                    <div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-ms-offset-1 col-xs-offset-1 p-0 contenedorNutrimental">
                        <div class="col-md-6 col-sm-6 col-xs-12 contenedorTablaEsenciales">
                            <div class="col-md-12 col-sm-12 col-xs-12 tablaEsenciales">
@@ -671,14 +601,14 @@
     <section id="" class="contenedorRelacionados">
       <div class="container">
           <div class="section-title text-center">
-              <div class="row">
+              <div class="row m-0">
                   <div class="col-md-8 col-md-offset-2">
                       <h3 class="text-uppercase font-16 filson mb-0">con sello rojo</h3>
                       <h2 class="text-cremaF2 mt-0 notoserif line-height-1">¡Tú eres el chef!</h2>
                   </div>
               </div>
           </div>
-          <div class="row">
+          <div class="row m-0">
               <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 p-0">
                   <iframe width="550" height="315" src="https://www.youtube.com/embed/oYS3U1TF5Gg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
@@ -686,13 +616,13 @@
                   <a class="btn btn-colored btn-lg btn-recetas1 text-uppercase filson-bold" href="#">Ver más recetas</a>
               </div>
           </div>
-          <div class="row">
+          <div class="row m-0">
               <div class="col-md-12 pt-20">
               <div id="carouselRecetas" class="owl-carousel owl-theme">
                 
                 <!-- ITEM 1 -->
                 <div class="item">
-                  <a class="text-negro2 filson-medium" href="detalle-cheescake.html">
+                  <a class="text-negro2 filson-medium" href="detalle-cheescake.php">
                     <article class="post clearfix postReceta">
                         <img src="images/recetas/cheescake.png" alt="Cheescake" class="img-responsive imgReceta">
                       <div class="divTop">
@@ -719,7 +649,7 @@
                   
                   <!-- ITEM 2 -->
                   <div class="item">
-                    <a class="text-negro2 filson-medium" href="detalle-chocolate.html">
+                    <a class="text-negro2 filson-medium" href="detalle-chocolate.php">
                       <article class="post clearfix postReceta">
                           <img src="images/recetas/chocolate.png" alt="Cocolate Blanco" class="img-responsive imgReceta">
                         <div class="divTop">
@@ -746,7 +676,7 @@
                   
                   <!-- ITEM 3 -->
                   <div class="item">
-                    <a class="text-negro2 filson-medium" href="detalle-chile.html">
+                    <a class="text-negro2 filson-medium" href="detalle-chile.php">
                       <article class="post clearfix postReceta">
                           <img src="images/recetas/chile.png" alt="Chile en nogada" class="img-responsive imgReceta">
                         <div class="divTop">
@@ -773,7 +703,7 @@
                   
                   <!-- ITEM 4 -->
                   <div class="item">
-                    <a class="text-negro2 filson-medium" href="detalle-gelatina.html">
+                    <a class="text-negro2 filson-medium" href="detalle-gelatina.php">
                       <article class="post clearfix postReceta">
                           <img src="images/recetas/gelatina.png" alt="Gelatina" class="img-responsive imgReceta">
                         <div class="divTop">
@@ -809,13 +739,13 @@
     <section id="" class="contenedorRelacionados">
       <div class="container">
           <div class="section-title text-center">
-              <div class="row">
+              <div class="row m-0">
                   <div class="col-md-8 col-md-offset-2">
                       <h2 class="text-cremaF2 mt-0 notoserif line-height-1">También te podría gustar</h2>
                   </div>
               </div>
           </div>
-          <div class="row">
+          <div class="row m-0">
               <div class="col-md-12 p-0 contenedorProRe">
                 <?php
                 $pC = count($productos);
@@ -883,89 +813,9 @@
       </div>
     </section>
       
-      
-  <footer id="footer" class="footer pb-0" data-bg-img="" data-bg-color="#fafafa">
-    <div class="container-fluid pt-30 pb-15">
-      <div class="row">
-        <div class="col-sm-1 col-md-1 col-xs-12 p-0 contenedorL">
-          <div class="widget pb-0 hidden-xs"> 
-              <img class="pull-right" alt="Logo Sello Rojo" src="images/logo-sello.png">
-          </div>
-            <div class="col-xs-4 mb-10 hidden visible-xs">
-                <img class="selloResponsive" alt="Logo Sello Rojo" src="images/logo-sello.png">
-            </div>
-            <div class="col-xs-8 redesResponsive hidden visible-xs p-0">
-                <ul class="styled-icons icon-dark icon-cremaF icon-circled icon-sm mt-10 icon-rosa">
-                  <li><a href="https://www.facebook.com/alimentossellorojomx/?ref=br_rs" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/sellorojo/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCAf8lF4UilevTxCAxClbgCw" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                  <li><a href="https://twitter.com/SelloRojo"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-sm-3 col-md-3 col-xs-12 corporativo">
-          <div class="widget domicilio">
-            <h5 class="widget-title text-cremaF filson-medium">Corporativo</h5>
-            <div class="col-md-12 col-sm-12 p-0">
-                <p class="mb-0 filson text-negro2">Dr. R. Michel 2285</p>
-                <p class="mb-0 filson text-negro2">Col. Jardines del Rosario</p>
-                <p class="mb-0 filson text-negro2">Guadalajara, Jalisco, México.</p>
-                <p class="mb-0 filson text-negro2">C.P. 44890 </p>
-            </div>
-            <div class="col-md-12 col-sm-12 p-0">
-                <div class="col-md-12 p-0">
-                    <img class="imgText" src="images/iconos/cel.png" alt="Celular"><a href="tel:+52013336579297"><p class="imgText filson text-negro2">01 (33) 3657 9297</p></a>
-                </div>
-                <div class="col-md-12 col-sm-12 p-0">
-                    <img class="imgText" src="images/iconos/mail.png" alt="Mail"><a href="mailto:info@sellorojo.com.mx"><p class="imgText filson text-negro2">info@sellorojo.com.mx</p></a>
-                </div>
-            </div>
-            <div class="col-md-12 col-sm-12 p-0 hidden-xs">
-                <ul class="styled-icons icon-dark icon-cremaF icon-circled icon-sm mt-10 icon-rosa">
-                  <li><a href="https://www.facebook.com/alimentossellorojomx/?ref=br_rs" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/sellorojo/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCAf8lF4UilevTxCAxClbgCw" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                  <li><a href="https://twitter.com/SelloRojo"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-md-3 col-xs-12 mapa">
-          <div class="widget">
-            <h5 class="widget-title text-cremaF filson-medium">Mapa del sitio</h5>
-            <div class="col-md-6 col-sm-6 col-xs-6 p-0">
-                <a href="index.html"><p class="mb-0 filson text-negro2">Inicio</p></a>
-                <a href="catalogo.html"><p class="mb-0 filson text-negro2">Productos</p></a>
-                <a href="distribucion.html"><p class="mb-0 filson text-negro2">Distribución</p></a>
-                <a href="contacto.html"><p class="mb-0 filson text-negro2">Contacto</p></a>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6 p-0">
-                <a href="faq.html"><p class="mb-0 filson text-negro2">Preguntas frecuentes</p></a>
-                <a href="https://www.occ.com.mx/empleos/de-sello-rojo/"><p class="mb-0 filson text-negro2">Bolsa de trabajo</p></a>
-                <a href="aviso.html"><p class="mb-0 filson text-negro2">Aviso de privacidad</p></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-md-4 col-xs-12">
-          <div class="widget">
-            <h5 class="widget-title text-cremaF filson-medium llamanos">¡Llámanos!</h5>
-            <div class="col-md-12 col-sm-12 col-xs-12 p-0">
-                <a href="tel:+52018008873556"><div class="contenedorExtencion"><p class="mb-0 filson-medium text-negro2 font-40 relative">01800<span class="text-cremaF">MISELLO</span></p><p class="extencion filson-medium text-gris">(6473556)</p></div></a>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12 pt-15 p-0 contenedorIso">
-                <div class="col-md-3 col-sm-3 col-xs-3 p-0"><img src="images/footer/iso1.png" alt="ISO GlobalSTD"></div>
-                <div class="col-md-3 col-sm-3 col-xs-3 p-0"><img src="images/footer/iso2.png" alt="ISO ANAB"></div>
-                <div class="col-md-3 col-sm-3 col-xs-3 p-0"><img class="" src="images/footer/iso3.png" alt="ISO FSSC 2200"></div>
-                <div class="col-md-3 col-sm-3 col-xs-3 p-0"><img class="" src="images/footer/iso4.png" alt="ISO 9001"></div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12 pt-10 p-0 copy">
-                <p class="text-negro2 filson mb-0 font-12">Alimentos Sello Rojo®</p><p class="text-negro2 filson mb-0 font-12"> Todos los derechos reservados</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      </footer>
+ <?php
+    include "footer.html";
+    ?>
       
   <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
   <!-- end main-content -->

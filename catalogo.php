@@ -84,80 +84,9 @@
     <div id="disable-preloader" class="btn btn-default btn-sm">Desactivar preloader</div>
   </div>
   
-  <!-- Header -->
-  <header id="header" class="header">
-    <div class="header-nav-wrapper navbar-scrolltofixed bg-lightest">
-        <div class="header-top bg-white sm-text-center p-0">
-      <div class="container">
-        <div class="row m-0">
-            <div class="col-md-5 pr-0">
-          </div>
-          <div class="col-md-7">
-            <div class="widget no-border m-0">
-              <ul class="topbar list-inline xs-text-center text-white mt-5">
-                <li class="m-0 pl-10 pr-10"> <a href="#" class="text-negro2">Bolsa de trabajo</a> </li>
-                <li class="m-0 pl-10 pr-10"> 
-                  <a href="#" class="text-negro2"> Preguntas frecuentes</a> 
-                </li>
-                <li class="m-0 pl-10 pr-10 misello2"> 
-                  <a class="btn btn-whatsapp" href="https://api.whatsapp.com/send?phone=+523316055265&text=Hola%2C%20Sello%20Rojo"><i class="fab fa-whatsapp mr-15"></i>Contacto</a> 
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <div class="header-nav-wrapper bg-white">
-        <div class="container">
-          <nav id="menuzord-right" class="menuzord">
-            <a class="menuzord-brand pull-left flip mt-0" href="javascript:void(0)">
-              <img src="images/logo-sello.png" alt="Logo Sello Rojo">
-            </a>
-             <ul class="menuzord-menu dark">
-              <li class="menuInicio"><a href="index.php">INICIO</a>
-              </li>
-              <li><a href="catalogo.php">PRODUCTOS</a>
-              </li>
-              <li><a href="distribucion.php">DISTRIBUCIÓN</a>
-              </li>           
-              <li><a href="contacto.php">CONTACTO</a>
-              </li>
-                <li class="buscar">
-                    <div class="box">
-                      <div class="container-1">
-                          <span class="icon"><i class="fa fa-search"></i></span>
-                          <input type="search" id="search" placeholder="Buscar..." />
-                      </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="col-md-12">
-                        <div class="widget no-border m-0">
-                          <ul class="styled-icons lista-iconos icon-circled icon-rosa icon-flat icon-sm pull-right flip sm-pull-none sm-text-right xs-text-right">
-                            <li><a href="https://www.facebook.com/alimentossellorojomx/?ref=br_rs" target="_blank"><i class="fab fa-facebook-f text-crema"></i></a></li>
-                            <li><a href="https://www.instagram.com/sellorojo/" target="_blank"><i class="fab fa-instagram text-crema"></i></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCAf8lF4UilevTxCAxClbgCw" target="_blank"><i class="fab fa-youtube text-crema"></i></a></li>
-                          </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="menuR"><a class="btn btn-whatsapp" href="https://api.whatsapp.com/send?phone=+523316055265&text=Hola%2C%20Sello%20Rojo"><i class="fab fa-whatsapp mr-15"></i>Contacto</a>
-              </li>
-                <li class="menuR"><a href="https://www.occ.com.mx/empleos/de-sello-rojo/" class="text-negro2">Bolsa de trabajo</a>
-              </li>
-                <li class="menuR"><a href="faq.php" class="text-negro2"> Preguntas frecuentes</a>
-              </li>
-                <li class="menuR menuBlog"><a href="blog.html" class="text-negro2"> Blog</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  
+<?php
+    include "menu.html";
+    ?>
   <!-- Start main-content -->
   <div class="main-content">
 <!-- Section: home -->
@@ -241,7 +170,7 @@
               responsiveLevels: [1240, 1024, 778],
               visibilityLevels: [1240, 1024, 778],
               gridwidth: [1170, 1024, 778, 480],
-              gridheight: [600, 668, 860, 620],
+              gridheight: [500, 468, 560, 620],
               lazyType: "none",
               parallax: {
                   origo: "slidercenter",
@@ -282,10 +211,10 @@
     <!-- Section: Categorías -->
     <section id="" class="contenedorFiltrosPadre bg-gris">
       <div class="container">
-        <div class="row m-0">
+        <div class="row m-0 p-0">
           <div class="col-md-10 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 col-md-offset-1 p-0">
               <div id="carouselPadre" class="socios owl-carousel owl-theme" data-dots="false" data-nav="true">
-                  <div class="item">
+                  <!--<div class="item" id="leche">
                       <a href="#"><img class="cateogiraPadre" src="images/productos/Padre/activo/leche.png" alt="Categoría leche"></a>
                       <p class="textCategoriaPadre text-negro3 filson-medium text-center mb-5 mt-5">Leche</p>
                   </div>
@@ -316,7 +245,7 @@
                     <div class="item">
                         <a href="#"><img alt="Categoría aguas" class="cateogiraPadre" src="images/productos/Padre/aguas.png"></a>
                         <p class="textCategoriaPadre filson-medium text-negro3 text-center mb-5 mt-5">Aguas</p>
-                    </div>
+                    </div>-->
                 </div>
           </div>
         </div>
@@ -325,10 +254,10 @@
       
     <section id="" class="contenedorFiltrosHijo">
       <div class="container">
-        <div class="row m-0">
+        <div class="row m-0 p-0">
             <div class="col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0  p-0">
                 <div id="carouselHijo" class="socios owl-carousel owl-theme" data-dots="false" data-nav="true">
-                  <div class="item">
+                  <!--<div class="item">
                       <a class="btn btn-colored filson-bold btn-verHijo activo" href="#">Entera</a>
                     </div>
                     <div class="item">
@@ -345,7 +274,7 @@
                     </div>
                     <div class="item">
                         <a class="btn btn-colored filson-bold btn-verHijo" href="#">Saborizada</a>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -354,21 +283,17 @@
       
     <section id="" class="contenedorFiltrosExtra">
       <div class="container">
-        <div class="row m-0">
+        <div class="row m-0 p-0">
           <div class="col-md-12 p-0">
             <div class="col-md-6 p-0 hidden-xs">
-                <div class="col-md-12">
-                    <span class="filson text-negro3"> Inicio </span>/<span class="filson text-negro3"> Productos </span>/ <span class="filson text-negro3"> Leche </span>/<span class="filson text-negro3"> Fresca </span>/ <span class="tagActive text-negro3">Entera 3%</span>
+                <div class="col-md-12" id="migas">
+                    
                 </div>
             </div>
             <div class="col-md-6 p-0">
                 <div class="col-md-12">
                     <div class="select text-negrp3">
                       <select>
-                        <option selected disabled>Filtrar por:</option>
-                        <option value="opcion-1">Polietileno</option>
-                        <option value="opcion-2">Lorem ipsum</option>
-                        <option value="opcion-n">Lorem ipsum</option>
                       </select>
                     </div>
                 </div>
@@ -380,9 +305,9 @@
       
 <section id="" class="contenedorProductos">
       <div class="container">
-        <div class="row m-0">
+        <div class="row m-0 p-0">
           <div class="col-md-12 p-0">
-            <div class="col-md-3 col-sm-4 col-xs-6">
+           <!-- <div class="col-md-3 col-sm-4 col-xs-6">
                 <article class="post clearfix postProducto">
                       <img src="images/productos/imgProducto/entera-1892ml.png" alt="Leche Entera 3% 1892mL" class="img-responsive imgProducto">
                     <div class="divTop">
@@ -537,96 +462,15 @@
                         </div>
                     </div>
                 </article>
-              </div>
+              </div>-->
           </div>
         </div>
       </div>
     </section>
       
-      
-    <!-- Footer -->
-  <footer id="footer" class="footer pb-0" data-bg-img="" data-bg-color="#fafafa">
-    <div class="container-fluid pt-30 pb-15">
-      <div class="row m-0">
-        <div class="col-sm-1 col-md-1 col-xs-12 p-0 contenedorL">
-          <div class="widget pb-0 hidden-xs"> 
-              <img class="pull-right" alt="Logo Sello Rojo" src="images/logo-sello.png">
-          </div>
-            <div class="col-xs-4 mb-10 hidden visible-xs">
-                <img class="selloResponsive" alt="Logo Sello Rojo" src="images/logo-sello.png">
-            </div>
-            <div class="col-xs-8 redesResponsive hidden visible-xs p-0">
-                <ul class="styled-icons icon-dark icon-cremaF icon-circled icon-sm mt-10 icon-rosa">
-                  <li><a href="https://www.facebook.com/alimentossellorojomx/?ref=br_rs" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/sellorojo/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCAf8lF4UilevTxCAxClbgCw" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                  <li><a href="https://twitter.com/SelloRojo"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-sm-3 col-md-3 col-xs-12 corporativo">
-          <div class="widget domicilio">
-            <h5 class="widget-title text-cremaF filson-medium">Corporativo</h5>
-            <div class="col-md-12 col-sm-12 p-0 mb-15">
-                <p class="mb-0 filson text-negro2">Dr. R. Michel 2285</p>
-                <p class="mb-0 filson text-negro2">Col. Jardines del Rosario</p>
-                <p class="mb-0 filson text-negro2">Guadalajara, Jalisco, México.</p>
-                <p class="mb-0 filson text-negro2">C.P. 44890 </p>
-            </div>
-            <div class="col-md-12 col-sm-12 p-0 mb-15">
-                <div class="col-md-12 p-0">
-                    <img class="imgText" src="images/iconos/cel.png" alt="Celular"><a href="tel:+523316055265"><p class="imgText filson text-negro2">33 1605 5265</p></a>
-                </div>
-                <div class="col-md-12 col-sm-12 p-0">
-                    <img class="imgText" src="images/iconos/mail.png" alt="Mail"><a href="mailto:hola@sellorojo.com.mx"><p class="imgText filson text-negro2">hola@sellorojo.com.mx</p></a>
-                </div>
-            </div>
-            <div class="col-md-12 col-sm-12 p-0 hidden-xs">
-                <ul class="styled-icons icon-dark icon-cremaF icon-circled icon-sm mt-10 icon-rosa">
-                  <li><a href="https://www.facebook.com/alimentossellorojomx/?ref=br_rs" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/sellorojo/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCAf8lF4UilevTxCAxClbgCw" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                  <li><a href="https://twitter.com/SelloRojo"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-md-3 col-xs-12 mapa">
-          <div class="widget">
-            <h5 class="widget-title text-cremaF filson-medium">Mapa del sitio</h5>
-            <div class="col-md-6 col-sm-6 col-xs-6 p-0">
-                <a href="index.php"><p class="mb-0 filson text-negro2">Inicio</p></a>
-                <a href="catalogo.php"><p class="mb-0 filson text-negro2">Productos</p></a>
-                <a href="distribucion.php"><p class="mb-0 filson text-negro2">Distribución</p></a>
-                <a href="contacto.php"><p class="mb-0 filson text-negro2">Contacto</p></a>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6 p-0">
-                <a href="faq.php"><p class="mb-0 filson text-negro2">Preguntas frecuentes</p></a>
-                <a href="https://www.occ.com.mx/empleos/de-sello-rojo/"><p class="mb-0 filson text-negro2">Bolsa de trabajo</p></a>
-                <a href="aviso.php"><p class="mb-0 filson text-negro2">Aviso de privacidad</p></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-md-4 col-xs-12">
-          <div class="widget">
-            <h5 class="widget-title text-cremaF filson-medium llamanos">¡Llámanos!</h5>
-            <div class="col-md-12 col-sm-12 col-xs-12 p-0 pl-20 mb-30">
-                <a class="btn-wts-f" href="https://api.whatsapp.com/send?phone=+523316055265&text=Hola%2C%20Sello%20Rojo"><i class="fab fa-whatsapp"></i></a>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12 pt-15 p-0 contenedorIso">
-                <div class="col-md-3 col-sm-3 col-xs-3 p-0"><img src="images/footer/iso1.png" alt="ISO GlobalSTD"></div>
-                <div class="col-md-3 col-sm-3 col-xs-3 p-0"><img src="images/footer/iso2.png" alt="ISO ANAB"></div>
-                <div class="col-md-3 col-sm-3 col-xs-3 p-0"><img class="" src="images/footer/iso3.png" alt="ISO FSSC 2200"></div>
-                <div class="col-md-3 col-sm-3 col-xs-3 p-0"><img class="" src="images/footer/iso4.png" alt="ISO 9001"></div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12 pt-10 p-0 copy">
-                <p class="text-negro2 filson mb-0 font-12">Alimentos Sello Rojo®</p><p class="text-negro2 filson mb-0 font-12"> Todos los derechos reservados</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      </footer>
+  <?php
+    include "footer.html";
+    ?>
       
   <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
   <!-- end main-content -->
@@ -637,8 +481,9 @@
 <!-- Footer Scripts -->
 <!-- JS | Custom script for all pages -->
 <script src="js/custom.js"></script>
+<script src="js/controladores/catalogo.js"></script>
     <script>
-        $('#carouselHijo').owlCarousel({
+        /*$('#carouselHijo').owlCarousel({
             items:6,
             loop:false,
             autoplay: false,
@@ -663,11 +508,11 @@
                     items:6
                 }
             }
-        })
+        })*/
     </script>
     <script>
-        $('#carouselPadre').owlCarousel({
-            items:6,
+        /*$('#carouselPadre').owlCarousel({
+            items:8,
             loop:false,
             autoplay: false,
             autoplayTimeout: 6000,
@@ -696,7 +541,7 @@
                     nav:false
                 }
             }
-        })
+        })*/
     </script>
    
 <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
@@ -711,6 +556,8 @@
 <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
 <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script>
+
+
 
 </body>
 </html>
