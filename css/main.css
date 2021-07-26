@@ -1,0 +1,1832 @@
+/*******************************************HOME************************************************/
+@font-face {
+  font-family: 'fineday';
+  src: url('../font/Fineday-StyleOne.ttf'); /* IE9 Compat Modes */
+  /*src: url('webfont.eot?#iefix') format('embedded-opentype'), 
+       url('webfont.woff2') format('woff2'),  Super Modern Browsers 
+       url('webfont.woff') format('woff'), Pretty Modern Browsers 
+       url('webfont.ttf')  format('truetype'), Safari, Android, iOS 
+       url('webfont.svg#svgFontName') format('svg');  Legacy iOS*/ 
+}
+
+@font-face {
+  font-family: 'notoserif';
+  src: url('../font/notoserif.ttf'); /* IE9 Compat Modes */
+  /*src: url('webfont.eot?#iefix') format('embedded-opentype'), 
+       url('webfont.woff2') format('woff2'),  Super Modern Browsers 
+       url('webfont.woff') format('woff'), Pretty Modern Browsers 
+       url('webfont.ttf')  format('truetype'), Safari, Android, iOS 
+       url('webfont.svg#svgFontName') format('svg');  Legacy iOS*/ 
+}
+
+@font-face {
+  font-family: 'filson';
+  src: url('../font/FilsonProBookTypeface.otf'); /* IE9 Compat Modes */
+  /*src: url('webfont.eot?#iefix') format('embedded-opentype'), 
+       url('webfont.woff2') format('woff2'),  Super Modern Browsers 
+       url('webfont.woff') format('woff'), Pretty Modern Browsers 
+       url('webfont.ttf')  format('truetype'), Safari, Android, iOS 
+       url('webfont.svg#svgFontName') format('svg');  Legacy iOS*/ 
+}
+
+@font-face {
+  font-family: 'filson-bold';
+  src: url('../font/FilsonProBoldTypeface.otf'); /* IE9 Compat Modes */
+  /*src: url('webfont.eot?#iefix') format('embedded-opentype'), 
+       url('webfont.woff2') format('woff2'),  Super Modern Browsers 
+       url('webfont.woff') format('woff'), Pretty Modern Browsers 
+       url('webfont.ttf')  format('truetype'), Safari, Android, iOS 
+       url('webfont.svg#svgFontName') format('svg');  Legacy iOS*/ 
+}
+
+@font-face {
+  font-family: 'filson-medium';
+  src: url('../font/FilsonProMediumTypeface.otf'); /* IE9 Compat Modes */
+  /*src: url('webfont.eot?#iefix') format('embedded-opentype'), 
+       url('webfont.woff2') format('woff2'),  Super Modern Browsers 
+       url('webfont.woff') format('woff'), Pretty Modern Browsers 
+       url('webfont.ttf')  format('truetype'), Safari, Android, iOS 
+       url('webfont.svg#svgFontName') format('svg');  Legacy iOS*/ 
+}
+
+button, a{
+    transition: 0.3s !important;
+}
+
+.cuerpo .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.envase1{
+    margin: 0 auto;
+    display: block !important;
+    max-height: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+.form-control, .form-control>select {
+    background-color: #fafafa !important;
+    border-radius: 16px !important;
+}
+
+.select3{
+    -webkit-appearance: none;
+}
+
+.select3:before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.extra1{
+    max-height: 100px;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(40%, 0);
+}
+
+.contenedorEnvasesR{
+    display: flex;
+    align-items: center;
+}
+
+.menuzord-brand{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.hephaistos .tp-bullet {
+    background: #f66a6f !important;
+    border: 3px solid #ffdece !important;
+}
+
+.fineday{
+    font-family: 'fineday' !important;
+}
+
+.filson{
+    font-family: 'filson' !important;
+}
+
+.filson-bold{
+    font-family: 'filson-bold' !important;
+}
+
+.filson-medium{
+    font-family: 'filson-bold' !important;
+}
+
+.notoserif{
+    font-family: 'notoserif' !important;
+    font-weight: normal;
+}
+
+.carousel-indicators {
+    left: 30% !important;
+}
+
+.topbar li{
+    text-align: center;
+    align-items: center;
+}
+
+.icon-rosa>li>a:hover .fab{
+    background-color: transparent!important;
+    color: #ff575f !important;
+}
+
+
+.icon-rosa a:hover{
+    background-color: transparent!important;
+    border: 1px solid #ff575f;
+    color: #ff575f !important;
+}
+
+.fab:hover{
+    color: #ff575f!important;
+}
+
+.topbar{
+    text-align: right;
+}
+
+.header-nav.navbar-transparent.animated-active .menuzord-menu > li > a {
+    font-family: filson !important;
+}
+
+.menuzord-menu > .buscar{
+    padding: 25px 0px;
+}
+
+.topbar li a{
+    color: #000 !important;
+}
+
+.misello {
+    color: #ff575f;
+}
+
+.topIcon > li{
+    padding: 22.5px 0;
+}
+
+.icon-rosa a{
+    background-color: #ff6666!important;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.box{
+    width: 200px;
+    height: 50px;
+}
+        
+.container-1{
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+        
+.container-1 input#search{
+  width: 300px;
+  height: 50px;
+  background: #fff;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #bfbfbf;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.contenedorEnvases>div{
+    display: flex;
+    align-items: center;
+}
+        
+.container-1 input#search::-webkit-input-placeholder {
+   color: #bfbfbf;
+}
+ 
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #bfbfbf;  
+}
+ 
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #bfbfbf;  
+}
+ 
+.container-1 input#search:-ms-input-placeholder {  
+   color: #bfbfbf;  
+}
+        
+.container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 14px;
+  z-index: 1;
+  color: #bfbfbf;
+}
+        
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    background: #ffffff;
+  }
+        
+.container-1 input#search{
+  width: 200px;
+  height: 50px;
+  background: #fff;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #262626;
+  padding-left: 45px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+ 
+   
+-webkit-transition: background .55s ease;
+-moz-transition: background .55s ease;
+-ms-transition: background .55s ease;
+-o-transition: background .55s ease;
+transition: background .55s ease;
+}
+
+.text-crema {
+    color: #ffd5c0 !important;
+}
+
+.text-negro {
+    color: #666666 !important
+}
+
+.text-cremaF {
+    color: #ff6666 !important;
+}
+
+.btn-ver:hover {
+    color: #ff6666 !important;
+}
+
+.btn-verProducto:hover {
+    color: #ff6666 !important;
+}
+
+.btn-verProducto1:hover {
+    background-color: white !important;
+    color: #ffa0b7 !important;
+}
+
+
+.btn-verProductos1:hover {
+    background-color: transparent!important;
+    color: #020202 !important;
+}
+
+.btn-verCategoria:hover {
+    background-color: white !important;
+    color: #ff6666 !important;
+    border: 1px solid #ff6666 !important;
+}
+
+
+.btn-enviar:hover {
+    background-color: white !important;
+    color: #ff6666 !important;
+    border: 1px solid #ff6666 !important;
+}
+
+.btn-verHijo:hover {
+    background-color: #ff6666 !important;
+    color: #fff !important;
+    border: 1px solid #bfbfbf !important;
+}
+
+.btn-verC:hover {
+    background-color: white !important;
+    color: #bfbfbf !important;
+    border: 1px solid #bfbfbf !important;
+}
+
+.btn-conoce:hover {
+    color: #ff6666 !important;
+    background-color: white !important;
+    border: 1px solid #ff6666 !important
+}
+
+.btn-donde:hover {
+    color: #ff6666 !important;
+    background-color: white !important;
+    border: 1px solid #ff6666 !important
+}
+
+.btn-recetas1:hover {
+    color: #ff6666 !important;
+    background-color: white !important;
+    border: 1px solid #ff6666 !important
+}
+
+.btn-recetas:hover {
+    color: #ff6666 !important;
+    background-color: white !important;
+    border: 1px solid #ff6666 !important
+}
+.btn-ver {
+    border: 1px solid #ff6666 !important;
+    color: #ff6666;
+    border-radius: 25px !important;
+}
+
+.btn-verProducto {
+    border: 1px solid #ff6666 !important;
+    color: #ff6666;
+    border-radius: 25px !important;
+    margin: 0 auto !important;
+    display: block !important;
+    max-width: 180px
+}
+
+.btn-verProducto1 {
+    border: 1px solid white !important;
+    color: white;
+    border-radius: 25px !important;
+    max-width: 180px
+}
+
+.btn-verProductos1 {
+    border: 1px solid #020202 !important;
+    color: #020202;
+    border-radius: 25px !important;
+    max-width: 180px
+}
+
+.btn-verCategoria {
+    background-color: #ff6666;
+    color: white;
+    border-radius: 25px !important;
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+.btn-enviar {
+    background-color: #ff6666;
+    color: white;
+    border-radius: 25px !important;
+    display: block !important;
+    float: right;
+    max-width: 165px;
+}
+
+.btn-verHijo {
+    background-color: #bfbfbf;
+    color: white;
+    border-radius: 25px !important;
+    margin: 0 auto !important;
+    display: block !important;
+    max-width: 162px;
+}
+
+.btn-verC {
+    background-color: #bfbfbf;
+    color: white;
+    border-radius: 25px !important;
+    margin: 0 auto !important;
+    display: inline-block !important;
+    width: 150px;
+}
+
+.btn-conoce {
+    background-color: #ff6666;
+    color: white;
+    border-radius: 25px !important;
+}
+
+.btn-donde {
+    background-color: #ff6666;
+    color: white;
+    border-radius: 25px !important;
+}
+
+.btn-recetas1 {
+    background-color: #ff6666;
+    color: white;
+    border-radius: 25px !important;
+    display: block !important;
+    margin: 0 auto;
+    max-width: 169px;
+}
+
+.btn-recetas {
+    background-color: #ff6666;
+    color: white;
+    border-radius: 25px !important;
+    margin: 0 auto;
+    display: block !important;
+    max-width: 200px;
+}
+
+.hephaistos .tp-bullet:hover, .hephaistos .tp-bullet.selected {
+    background: #ffe0cd !important;
+    border-color: #f66a6f !important;
+}
+
+.text-negro2 {
+    color: #323232 !important;
+}
+
+.text-negro3 {
+    color: #282828 !important;
+}
+
+.topbar li a:hover{
+    color: #ff575f !important;
+}
+
+.topbar li a{
+    font-family: 'filson-medium';
+    font-weight:normal;
+    font-size: 13px;
+}
+
+.misello2 a{
+    font-size: 15px !important;
+}
+
+.slider2 {
+    max-width: 1341px;
+}
+
+.img-centrada {
+    margin: 0 auto;
+    display: block;
+}
+
+.text-cremaF2 {
+    color: #ff6666;
+}
+
+.color-negro28 {
+    color: #282828;
+}
+
+.descripcionProductoSlide {
+    line-height: 1;
+}
+
+.contenedorHistoria {
+    padding-top: 140px;
+    display: flex;
+    align-items: center;
+}
+
+.imgHistoria {
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.textHistoria {
+    line-height: 1.5;
+}
+
+.textAlimentos {
+    max-width: 630px;
+    display: block;
+    margin: 0 auto;
+}
+
+.middle {
+    display: flex; 
+    align-items: center;
+}
+
+.max-180 {
+    max-width: 180px;
+}
+
+.contenedorEnvases {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    float: left;
+}
+
+.extra {
+    position: absolute;
+    top: -78px;
+    right: -89px;
+}
+
+.envase {
+    position: relative;
+    z-index: 1;
+}
+
+.cuerpo2 .container{
+    max-width: 1466px;
+}
+
+.cuerpo2 {
+    /*background-image: url(../images/bg/mesa.jpg);*/
+    background-position: 100% 695px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*height: 1478.7px;*/
+    height: auto;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.socios .item>img{
+    display: block !important;
+    margin: 0 auto;
+}
+
+.contenedorSocios {
+    padding-bottom: 50px !important;
+}
+
+.imgText {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 0;
+    max-height: 20px;
+}
+
+.text-gris {
+    color: #bfbfbf !important;
+}
+
+.extencion {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    font-size: 25px;
+    letter-spacing: 9px;
+}
+
+.extencion1 {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    font-size: 20px;
+    letter-spacing: 9px;
+}
+
+.contenedorExtencion {
+    width: 325px;
+    position: relative;
+}
+
+.contenedorExtencion1 {
+    width: 260px;
+    position: relative;
+}
+
+.contenedorIso img{
+    display: block;
+    margin: 0 auto;
+}
+
+.contenedorIso{
+    height: 90px;
+}
+
+.contenedorIso>div{
+    height: 75px !important;
+    display: flex;
+    align-items: center;
+}
+
+.caracteristicaText{
+    text-align: left;
+}
+
+.descripcionEnvase {
+    margin-bottom: 20px;
+}
+
+.mapa{
+    padding: 0; !important
+}
+.postReceta {
+    height: 320px;
+    position: relative;
+}
+
+.postRProducto {
+    height: 320px;
+    position: relative;
+}
+
+.divTop {
+    height: calc(320px / 2);
+    float: left;
+    width: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.divBottom {
+    background-color: #f7f7f7;
+    height: calc(320px / 2);
+    float: left;
+    width: 100%;
+    padding-top: calc(100px / 2);
+}
+
+.imgReceta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 140px;
+}
+
+.imgProducto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    max-height: 190px;
+}
+
+.tituloReceta {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.tituloProducto {
+    font-size: 17px;
+    line-height: 1;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.iconosRecetas {
+    display: inline-block;
+    max-height: 22px;
+}
+
+.textoReceta {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.contenedorTextoReceta {
+    text-align: center;
+}
+
+.contenedorTextoReceta1 {
+    text-align: left;
+}
+
+.tagReceta {
+    max-height: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.selloResponsive {
+    max-height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.redesResponsive {
+    text-align: center;
+}
+
+.copy p{
+    text-align: center;
+    display: inline-block;
+}
+
+.bg-gris {
+    background: #fafafa;
+}
+
+.btn-verHijo{
+        padding: 8px 0 !important;
+}
+
+.btn-verC{
+        padding: 8px 0 !important;
+}
+
+.cuerpo .row{
+    width: 100%;
+}
+
+.historia .container{
+    padding-top: 0;
+}
+
+.busqueda{
+    background: url("images/iconos/lupa.png") no-repeat scroll 0 0 white;
+    background-position: 10px 7px;
+    border: none;
+    color: #BFBFBF;
+    padding: 5px 7px 5px 40px !important;
+    width: 320px;
+    color: #bfbfbf;
+    border-radius: 25px;
+    height: 35px;
+}
+
+.busqueda::placeholder{
+    color: #bfbfbf;
+}
+
+/**************************************CATALOGO PRODUCTOS*********************************************/
+.contenedorFiltrosPadre .container{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contenedorFiltrosHijo .container{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contenedorFiltrosExtra .container{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contenedorProductos .container{
+    padding-top: 15px;
+}
+
+.owl-controls .owl-nav > .owl-next {
+            background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%) !important;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%) !important;
+    background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ) !important;
+        height: 64px !important;
+        top: -16px !important;
+        width: 60px !important;
+}
+
+.owl-controls .owl-nav > .owl-prev {
+            background: -moz-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%) !important;
+    background: -webkit-linear-gradient(right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%) !important;
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ) !important;
+        height: 64px !important;
+        top: -16px !important;
+        width: 60px !important;
+    display: none !important;
+}
+
+#carouselPadre .owl-controls .owl-nav > .owl-next {
+            background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%) !important;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%) !important;
+    background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ) !important;
+        height: 135px !important;
+    width: 60px !important;
+        top: -16px !important;
+}
+
+#carouselPadre .owl-controls .owl-nav > .owl-prev {
+    display: none !important;
+        
+            background: -moz-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%) !important;
+    background: -webkit-linear-gradient(right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%) !important;
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ) !important;
+        height: 135px !important;
+    width: 60px !important;
+        top: -16px !important;
+}
+
+#home1>.container-fluid>.rev_slider_wrapper>#slider1 .hephaistos .tp-bullet{
+    background: #c0c0c0 !important;
+    border-color: #c0c0c0 !important;
+}
+
+#slider1>.hephaistos .tp-bullet {
+    width: 4px;
+    height: 4px;
+}
+
+#slider1>.tp-mask-wrap{
+    overflow: visible !important;
+}
+
+/*******************************************RESPONSIVE************************************************/
+
+@media only screen and (max-width: 1079px) and (min-width: 1000px) {
+    .btn-verHijo {
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 1315px) and (min-width: 1079px) {
+    .btn-verHijo {
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (min-width: 1079px) {
+    .menuzord-brand img {
+        max-height: 70px !important;
+    }
+}
+
+@media only screen and (min-width: 971px) {
+    .menuzord-brand img {
+        max-height: 70px !important;
+    }
+}
+
+@media only screen and (max-width: 971px) {
+    .btn-verHijo{
+        padding: 8px 0 !important;
+        font-size: .8em !important;
+    }
+    
+    .btn-verC{
+        padding: 8px 0 !important;
+        font-size: .8em !important;
+    }
+    
+    .menuzord-brand img {
+        max-height: 70px !important;
+    }
+    
+    .topbar>li{
+        float: none;
+    }
+    
+    .menuzord .showhide {
+        padding: 35px 0 0 !important;
+    }
+    
+    .carousel-indicators {
+        bottom: 35px !important;
+    }
+    
+    .llamanos{
+        margin-top: 20px !important;
+    }
+    
+    .contenedorMisello p, .contenedorMisello h5 {
+        text-align: center;
+    }
+    
+    .contenedorMisello .icon-cremaF, .contenedorMail, .contenedorTel{
+        text-align: center;
+    }
+    
+    .contenedorMisello .contenedorExtencion1{
+        margin: 0 auto;
+    }
+    
+    .contenedorMisello .dm1{
+        margin-bottom: 0
+    }
+}
+
+@media screen and (max-width: 770px){
+    .pTitulo{
+        text-align: center !important;
+    }
+    
+    .contenedorCaracteristicasP{
+        padding-top: 40px;
+    }
+    
+    .tablaEsenciales>div {
+        height: 100px !important;
+    }
+    
+    .contenedorTablaN .section-title{
+        margin-bottom: 5px !important;
+    }
+    
+    .contenedorIngredientes p, .contenedorInstrucciones p, .contenedorInstrucciones{
+        text-align: center !important;
+        display: block !important;
+        margin: 0 auto !important;
+        float: none !important;
+    }
+    
+    .text-descripcionProducto{
+        text-align: center !important;
+    }
+    
+    .contenedorPresentaciones{
+        display: initial !important;
+    }
+    
+    .text-otrasPresentaciones{
+        text-align: center !important;
+        font-size: 14px !important;
+    }
+    
+    .text-pasteurizada{
+        text-align: center !important
+    }
+    
+    .cuerpo2 {
+        background-position: 100% 600px !important;
+    }
+    
+    .contenedorNutrimental {
+        display: initial !important;
+        align-items: center;
+    }
+    
+    .vitaminas td{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .textNorma{
+        text-align: center;
+    }
+    
+    .productotitulo{
+        text-align: center !important;
+    }
+}
+
+
+
+@media screen and (max-width: 600px){
+    .descripcionEnvase {
+        height: auto !important;
+    }
+    
+    .pTitulo{
+        text-align: center !important;
+    }
+    
+    .cuerpo2 {
+        /*background-position: 100% 675px !important;*/
+        /*height: 1298px !important;*/
+        height: auto;
+    }
+    
+    .select {
+        width: 100% !important;
+        padding-top: 3px !important;
+    }
+    
+    .contenedorProductos>.container>.row>div>div{
+        padding: 0 5px!important;
+    }
+    
+    .imgProductoDetalle{
+        max-height: 250px !important;
+    }
+    
+   .contenedorPresentaciones .select1{
+        height: 30px;
+       margin-top: 5px !important;
+    }
+    
+    .contenedorPresentaciones .select1 select{
+        font-size: 12px !important;
+        height: 30px !important;
+        line-height: 16px !important;
+    }
+    
+    .contenedorProRe>div{
+        padding: 0 5px !important;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 370px){
+    .contenedorExtencion {
+    width: 300px !important;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .textNorma {
+        max-width: 320px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .cuerpo2 {
+        /*background-image: url(../images/bg/bg-mesaResponsive.jpg) !important;*/
+        background-position: 100% 710px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: auto;
+        max-width: 1466px;
+        margin: 0 auto;
+    }
+    
+    .contenedorEnvases>div {
+        display: initial !important;
+        align-items: center;
+    }
+    
+    .extra {
+        left: 50%;
+        max-height: 95px;
+        transform: translate(30%, 0);
+    }
+    
+    .envase{
+        display: block !important;
+        margin: 0 auto;
+    }
+    
+    .caracteristicaText, .descripcionEnvase{
+        text-align: center ;
+    }
+    
+    .max-180 {
+        max-width: 225px;
+    }
+    
+    .height-192{
+        height: 192px;
+    }
+    
+    .descripcionEnvase{
+        height: 75px;
+    }
+    
+    .contenedorNutrimental {
+        display: initial !important;
+        align-items: center;
+    }
+    
+    .col-md-15{
+        width: 33.3333333333% !important;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 891px){
+    .cuerpo2 {
+        background-position: 100% 727px;
+        height: auto;
+    }
+}
+
+@media only screen and (width: 972px) {
+    .menuzord-brand img {
+        max-height:20px !important;
+    }
+}
+
+@media only screen and (min-width: 894px) {
+    .contenedorFiltrosHijo .container{
+        width: 100% !important;
+        padding: 15px 0 !important;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .col-md-15{
+        width: 50% !important;
+        float: left;
+    }
+    
+    .contenedorTablaEsenciales {
+        padding: 5% 0 0 0 !important;
+    }
+    
+    .contenedorTablaN .container{
+        padding-bottom: 40px !important;
+    }
+
+    .tablaEsenciales {
+        padding: 10% 0% 0 0 !important;
+    }
+    
+    .contenedorRecetasC{
+        padding-top: 30px;
+    }
+    
+    .select1 select {
+        width: 100% !important;
+        font-size: 14px !important;
+    }
+    
+    .btn-donde{
+        width: 100% !important;
+        max-width: 220px !important;
+        display: block !important;
+        margin: 5px auto !important;
+    }
+    
+    .select1{
+        display: block !important;
+        margin: 0 auto !important;
+        float: none !important;
+    }   
+    
+    .selectContacto{
+        width: 270px !important;
+        display: block !important;
+        margin: 0 auto !important;
+        float: none !important;
+    }
+    
+    .btn-verHijo{
+        padding: 8px 0 !important;
+    }
+    
+    .btn-verC{
+        padding: 8px 0 !important;
+    }
+    
+    .contenedorHistoria{
+        display: block;
+        padding-top: 50px;
+    }
+    
+    .box{
+        float: right !important;
+        height: 40px;
+    }
+    
+    .header-nav-wrapper{
+        background-color: white;
+        border-bottom: 1px solid #fafafa;
+    }
+    
+    .contenedorRelacionados .container-fluid{
+        padding-top: 0 !important;
+    }
+    
+    .header-nav-wrapper .container{
+        padding-right: 0 !important;
+    }
+    
+    .menuzord-menu{
+        overflow: hidden;
+    }
+    
+    .header-top{
+        display: none;
+    }
+    
+    .lista-iconos{
+        padding-top: 6px;
+    }
+    
+    .menuzord-responsive .menuzord-menu > li{
+        max-height: 50px;
+    }
+    
+    .menuzord-responsive .menuzord-menu > li > a{
+        border: none !important;
+    }
+    
+    .container-1 input#search {
+        height: 40px;
+        background: #fafafa;
+    }
+    
+    .container-1 .icon {
+        margin-top: 9px;
+    }
+    
+    .imgBanner{
+        margin-bottom: 20px !important;
+    }
+    
+    .imgHistoria{
+        margin-bottom: 10px;
+    }
+    
+    .contenedorHistoria div{
+        text-align: center;
+    }
+    
+    .btn-verCategoria{
+        max-width: 190px;
+    }
+    
+    .btn-verHijo{
+        max-width: 170px;
+    }
+    
+    .btn-verC{
+        max-width: 170px;
+    }
+    
+    .descripcionEnvase{
+        max-width: 400px;
+    text-align: left;
+    margin: 10px auto;
+    }
+    
+    .caracteristicaText{
+        text-align: left;
+    }
+    
+    .contenedorEnvases>div{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin-bottom: 80px;
+    }
+    
+    .middle{
+        display: initial;
+    }
+    
+    .contenedorEnvases img{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .extra {
+        position: absolute;
+        left: 50%;
+        top: -78px;
+        transform: translate(30%, 0%);
+        -webkit-transform: translate(30%, 0%);
+        margin: initial !important;
+    }
+    
+    .cuerpo2 {
+        /*background-image: url(../images/bg/mesa.jpg);*/
+        background-position: 100% 650px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: auto;
+    }
+    
+    .contenedorExtencion, .llamanos{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .contenedorExtencion1, .llamanos{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .mapa{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    ..corporativo{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        display: initial;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .contenedorL{
+        float: none !important;
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer .widget-title{
+        text-align: left;
+        font-size: 22px;
+    }
+    
+    .domicilio>div{
+        text-align: left;
+    }
+    
+    .footer .widget {
+        width: 100%;
+    }
+    
+    .mapa .col-xs-6>a{
+        text-align: left;
+    }
+    
+    .redesResponsive .styled-icons.icon-sm a {
+        font-size: 22px;
+        height: 40px;
+        line-height: 40px;
+        margin: 2px 7px 2px 0;
+        width: 40px;
+    }
+    
+    .contenedorExtencion {
+        width: 330px;
+    }
+    
+    .contenedorExtencion1 {
+        width: 330px;
+    }
+    
+    .copy p{
+        text-align: left !important;
+        display: block !important;
+    }   
+}
+
+
+@media only screen and (min-width: 811px){
+    .menuR{
+        display: none !important;
+    }
+}
+
+@media (max-width: 400px){
+    .extra1 {
+        max-height: 86px !important;
+    }
+}
+
+
+@media (max-width: 810px){
+    .menuR{
+        display: block !important;
+    }
+    
+    .box{
+        float: right;
+    }
+    
+    .container-1 input#search {
+        height: 40px;
+        background: #fafafa;
+        width: 190px;
+    }
+    
+    .menuzord-responsive .menuzord-menu > li > a {
+        border-bottom: none !important;
+    }
+    
+    .menuzord-menu > .buscar {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    
+    .container-1 .icon {
+        margin-top: 9px !important;
+        top: 10%;
+    }
+    
+    .box .container-1{
+        padding: 2.5% 5px;
+        height: 100%;
+        position: relative;
+    }
+    
+    .menuBlog{
+        margin-bottom: 7px;
+    }
+    
+    .menuzord-responsive .menuzord-menu > li:first-child > a {
+        border-top: none !important;
+    }
+    
+    .header-nav.navbar-transparent.animated-active .header-nav-wrapper {
+        background-color: white !important;
+    }
+    
+    .header-nav.navbar-transparent .menuzord {
+        background: white !important;
+    }
+    
+    .header-top{
+        display: none;
+    }
+    
+    .menuzord-responsive .menuzord-menu > .menuInicio > a{
+        padding-top: 0 !important;  
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .header-nav-wrapper .container{
+        width: 100%!important;
+        padding: 0;
+    }
+    
+    .header-nav-wrapper .header-nav-wrapper>.container{
+        width: 100%!important;
+        padding: 0;
+    }
+    
+    .menuzord-brand {
+        margin: 18px 0px 0 0 !important;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .middle{
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    
+    .middle {
+        display: initial;
+    }
+    
+    .contenedorEnvases>div{
+        margin-bottom: 0;
+    }
+    
+    .envase{
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .caracteristicaText{
+        text-align: left;
+    }
+    
+    .descripcionEnvase{
+        margin-bottom: 10px;
+        max-width: 100%;
+        text-align: left;
+    }
+}
+
+.col-xs-15,
+
+.col-sm-15,
+
+.col-md-15,
+
+.col-lg-15 {
+
+  min-height: 1px; 
+
+  position: relative;
+
+}
+
+.col-xs-15 {
+
+  float: left;
+
+  width: 20%;
+
+}
+
+@media (min-width: 992px) {
+
+  .col-md-15 {
+
+    float: left;
+
+    width: 20%;
+
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .col-lg-5 {
+
+    float: left;
+
+    width: 20%;
+
+  }
+
+}
+
+.activo {
+    background-color: #e67373 !important;
+}
+
+.cateogiraPadre {
+    display: block !important;
+    margin: 0 auto;
+        max-height: 70px;
+}
+
+.tagActive {
+    font-family: filson-bold;
+}
+
+.select {
+    position: relative;
+    border: none;
+    border-radius: 25px;
+    width: 120px;
+    overflow: hidden;
+    background-color: #fafafa;
+    height: 40px;
+    width: 300px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: filson;
+    float: right
+}
+
+.select1 {
+    position: relative;
+    border: none;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #fafafa;
+    height: 45px;
+    width: 100%;
+    padding-top: 0px;
+    padding-left: 0px;
+    font-family: filson;
+    float: right
+}
+
+.selectContacto {
+    position: relative;
+    border: none;
+    border-radius: 25px;
+    width: 120px;
+    overflow: hidden;
+    background-color: #fafafa;
+    height: 40px;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: filson;
+    float: right
+}
+
+
+.select:before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    z-index: 5;
+    pointer-events: none;
+}
+
+/*.select1:before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    z-index: 5;
+    pointer-events: none;
+}*/
+
+.selectContacto:before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.select select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.select1 select {
+    padding: 5px 10px !important;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent !important;
+    background-image: none;
+    appearance: none;
+    color: #9f9f9f;
+}
+
+.descripcionProducto {
+    margin-bottom: 0;
+    line-height: 1;
+    font: 16px;
+    max-width: 230px;
+    margin: 0 auto;
+}
+
+.contenedorNavs {
+    display: none;
+}
+
+.bg-item1 {
+    background-image: url(../images/banner/banner-vainilla.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedorPresentaciones {
+    display: flex;
+    align-items: center;
+}
+
+.imgProductoDetalle {
+    width: auto!important;
+    max-height: 460px;
+}
+
+.share {
+    width: 32px !important;
+    height: 32px !important;
+}
+
+.share1 {
+    width: 42px !important;
+    height: 42px !important;
+    display: block !important;
+    margin: 0 auto !important;
+    float: none!important;
+}
+
+.tablaEsenciales>div {
+    height: 130px;
+}
+
+.tablaPorciones td{
+    width: 50%;
+    border-top: none !important;
+}
+
+.tablaPorciones td{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.tablaPorciones .grasas td{
+    margin: 0 !important;
+    padding: 0 !important
+}
+
+.tablaPorciones .carbohidratos td{
+    margin: 0 !important;
+    padding: 0 !important
+}
+
+.tablaPorciones .contenidoEnergetico {
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 15px !important;
+}
+
+.tablaPorciones .porcion {
+    text-align: right;
+    font-family: filson;
+    color: #282828;
+}
+
+.descripcionEnergetica {
+    color: #282828;
+}
+
+.carbo1 td{
+   padding-top: 6px !important;
+   padding-bottom: 0px !important;
+}
+
+.textNorma {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-pasteurizada {
+    text-align: left;
+}
+
+.contenedorTablaEsenciales {
+    padding: 5% 0;
+}
+
+.tablaEsenciales {
+    padding: 10% 0%;
+}
+
+.tp-mask-wrap{
+    overflow: visible !important;
+}
+.txt-CaracteristicaR {
+    font-size: 13px;
+}
+
+.contenedorI {
+    border-bottom: 1px solid #dedede;
+}
+
+.contenedorInstrucciones p{
+    line-height: 2;
+}
+
+.contenedorInstrucciones {
+    max-width: 400px;
+}
+
+.bg-Slider2{
+    background-image: url(images/banner/banner-vainilla.jpg);
+    background-size: cover;
+    background-position: 50% 100%;
+    z-index: 20;
+}
+
+.fnt-normal {
+    font-weight: normal;
+}
+
+.contenedorSocios1 img{
+    display: block !important;
+    margin: 0 auto;
+}
+
+.seccionSocios .container{
+    padding-top: 0;
+}
+
+.contenedorFormulario1 .form-control, .form-control>select {
+    background-color: white!important;
+}
+
+.contenedorTikito img{
+    padding: 20% 0;
+    display: block !important;
+    margin: 0 auto;
+}
+
+.btnProduct1:hover {
+    background-color: transparent!important;  
+    border: 1px solid white !important;
+}
+
+.btnProduct2:hover {
+    background-color: transparent!important;  
+    border: 1px solid rgb(88,165,30) !important;
+    color: rgb(88,165,30) !important;
+}
+
+.tp-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 25px !important;
+}
+
+.fab {
+    color: white !important;
+}
+#selectPres {
+    height: 100% !important;
+}
+
+.contenedorCaracteristicasP .col-xs-6{
+    height: 155px;
+}
