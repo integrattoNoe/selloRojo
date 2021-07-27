@@ -26,8 +26,10 @@ switch($asunto){
         break;
     case "Facturación":
         $correoDestino = "gsanchez@sellorojo.com.mx";
+        break;
     case "Maquinas Despachadoras":
         $correoDestino = "mgarnica@sellorojo.com.mx";
+        break;
     case "Prácticas Profesionales":
         $correoDestino = "reclutamiento@sellorojo.com.mx";
         break;

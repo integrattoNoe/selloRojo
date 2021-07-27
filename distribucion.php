@@ -302,37 +302,37 @@
                               <h5 class="widget-title text-cremaF filson-medium">Escríbenos</h5>
                                   <p style="line-height: 1.5" class="filson text-negro2 mb-30">Envía tus comentarios directamente al área correspondiente.</p>
                               <div class="col-md-12 col-sm-12 col-xs-12 p-0">
-                                  <form class="form-horizontal contenedorFormulario1">
-                                      <div class="form-group">
+                              <form class="form-horizontal contenedorFormulario1" id="formContacto" action="javascript:void(0);">
+                                       <div class="form-group">
                                         <label for="inputPassword3" class="col-sm-3 control-label">Nombre</label>
                                         <div class="col-sm-9">
-                                          <input type="text" class="form-control" id="inputPassword3" placeholder="Ej. Juan Pérez">
+                                          <input type="text" class="form-control" placeholder="Ej. Juan Pérez" name="nombre" required>
                                         </div>
                                       </div>
                                       <div class="form-group">
                                         <label for="inputPassword3" class="col-sm-3 control-label">Whatsapp</label>
                                         <div class="col-sm-9">
-                                          <input type="tel" class="form-control" id="inputPassword3" placeholder="33 33333333">
+                                          <input type="tel" class="form-control" placeholder="33 33333333" name="whats" required>
                                         </div>
                                       </div>
                                       <div class="form-group">
                                         <label for="inputPassword3" class="col-sm-3 control-label">Correo</label>
                                         <div class="col-sm-9">
-                                          <input type="text" class="form-control" id="inputPassword3" placeholder="Ej. jperez@sellorojo.com.mx">
+                                          <input type="text" class="form-control" placeholder="Ej. jperez@sellorojo.com.mx" name="correo" required>
                                         </div>
                                       </div>
                                       <div class="form-group">
                                         <label for="inputEmail3" class="col-sm-3 control-label ">Distribuidora</label>
                                         <div class="col-sm-9">
                                             <div class="select1 text-negrp3">
-                                              <select class="form-control selectContacto" id="inputArea">
+                                              <select class="form-control selectContacto" required name="distribuidora" id="distribuidora">
                                                     <option selected disabled>Selecciona...</option>
                                                     <option value="Aguascalientes">Aguascalientes, Ags.</option>
                                                     <option value="Colima">Colima, Col.</option>
                                                     <option value="Manzanillo">Manzanillo, Col.</option>
                                                     <option value="Tecoman">Tecomán, Col.</option>
-                                                    <option value="Naucalpan&ZeroWidthSpace;">Naucalpan, Edo. Méx.&ZeroWidthSpace;</option>
-                                                    <option value="Toluca&ZeroWidthSpace;">Toluca, Edo. Méx.&ZeroWidthSpace;</option>
+                                                    <option value="Naucalpan">Naucalpan, Edo. Méx.&ZeroWidthSpace;</option>
+                                                    <option value="Toluca">Toluca, Edo. Méx.&ZeroWidthSpace;</option>
                                                     <option value="Celaya">Celaya, Gto.</option>
                                                     <option value="Irapuato">Irapuato, Gto.</option>
                                                     <option value="Leon">León, Gto.</option>
@@ -378,13 +378,13 @@
                                       <div class="form-group">
                                         <label for="inputPassword3" class="col-sm-3 control-label ">Mensaje</label>
                                         <div class="col-sm-9">
-                                            <textarea type="text" class="form-control" rows="4" id="inputPassword3" placeholder="¿Cómo podemos ayudarte?"></textarea>
+                                            <textarea type="text" class="form-control" rows="4" placeholder="¿Cómo podemos ayudarte?" name="mensaje" required></textarea>
                                         </div>
                                       </div>
                                       <div class="form-group">
                                         <span class="gdpr-block pl-15">
                                             <label>
-                                            <span class="textGDPR display-7" style="color: #777777"><input type="checkbox" name="gdpr" id="" class="mr-10" required="">Acepto los términos y condiciones del <a style="color: #000; text-decoration: none;" href="aviso.php">Aviso de Privacidad</a></span>
+                                            <span class="textGDPR display-7" style="color: #777777"><input type="checkbox" name="gdpr" id="" class="mr-10" required>Acepto los términos y condiciones del <a style="color: #000; text-decoration: none;" href="aviso.php">Aviso de Privacidad</a></span>
                                             </label>
                                         </span>
                                       </div>
@@ -432,6 +432,9 @@
 <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
 <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script>
+
+<script src="js/controladores/contacto-distribucion.js"></script>
+
 
 </body>
 </html>
