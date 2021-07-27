@@ -120,20 +120,20 @@ function renderDist(){
       var el = '<div class="col-sm-3 col-md-3 col-xs-12 corporativo">';
       el += '<h5 class="text-negro3 filson text-uppercase mb-0 fnt-normal">'+lugares[i].Estado+'</h5>';
       el += '<h5 class="widget-title text-cremaF filson-medium mt-0">Distribuidora<br>'+lugares[i].Distribuidora+'</h5>';
-      el += '<div class="col-md-12 col-sm-12 p-0">';
+      /*el += '<div class="col-md-12 col-sm-12 p-0">';
       el += '<h5 class="font-14 widget-title mb-0 filson-medium">Teléfonos</h5>';
       const tm = lugares[i].Telefono;
       var tmp = tm.split("-");
       for(var j in tmp){
         el += '<p class="mb-0 filson text-negro2">'+tmp[j].trim();+'</p>'
       }
-      el += '</div>';
+      el += '</div>';*/
       el += '<div class="col-md-12 col-sm-12 p-0">';
       el += '<h5 class="font-14 widget-title mb-0 filson-medium">Domicilio</h5>';
       el += '<p class="mb-0 filson text-negro2">'+lugares[i].Domicilio+'</p>';
       el += '<p class="mb-0 filson text-negro2"> Municipio: '+lugares[i].Municipio+'</p>';
       el += '<p class="mb-0 filson text-negro2">Estado: '+lugares[i].Estado+'</p>';
-      el += '<p class="mb-0 filson text-negro2">C.P: </p>';
+      //el += '<p class="mb-0 filson text-negro2">C.P: </p>';
       if(lugares[i].URL_maps != null)
         el += '<p class="mb-0 filson text-negro2"><a class="text-cremaF filson" href="'+lugares[i].URL_maps+'" target="_blank">Ver en Google Maps</a> </p>';
       else
